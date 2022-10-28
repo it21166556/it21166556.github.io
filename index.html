@@ -43,6 +43,35 @@ public class Employee {
         
     }
 }
+public class Employee {
+    protected String EmpId;
+    protected String name;
+    protected String address;
+
+    public Employee() {
+       EmpId = "No id";
+       name = "No name";
+       address = "no address";
+    }
+
+    public Employee(String EmpId, String name, String address) {
+        this.EmpId = EmpId;
+        this.name = name;
+        this.address = address;
+    }
+    
+    public void read(){
+        
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter employee id: ");
+        EmpId = scanner.next();
+        System.out.print("Enter employee name: ");
+        name = scanner.next();
+        System.out.print("Enter employee address: ");
+        address = scanner.next();
+        
+    }
+}
 
     
 
