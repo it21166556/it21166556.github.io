@@ -74,6 +74,8 @@ where p.personNo=b.personNo and l.loanNo=b.loanNo and l.value< (select sum(balan
 select * 
 from IT21174780_Person_B2
 
+=====================
+
 --For all person who havi taken a loan print the person number and total amount borrowed
 
 select  p.telephone ,sum(l.value)
